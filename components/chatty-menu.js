@@ -8,7 +8,7 @@ class ChattyMenu extends HTMLElement {
 <link href="css/global.min.css" rel="stylesheet">
 
 <!-- Static sidebar for desktop -->
-<div class="fixed inset-y-0 flex w-64 flex-col">
+<div class="fixed inset-y-0 flex md:w-64 w-16 flex-col">
   <div class="flex min-h-0 flex-1 flex-col bg-gray-800">
     <div class="flex flex-1 flex-col overflow-y-auto pt-5 pb-4">
       <div class="flex flex-shrink-0 items-center px-4 text-gray-500">
@@ -22,7 +22,7 @@ class ChattyMenu extends HTMLElement {
       </nav>
     </div>
 
-    <div class="flex flex-shrink-0 bg-gray-700 p-4 flex-col">
+    <div class="flex flex-shrink-0 bg-gray-700 p-4 flex-col overflow-y-auto">
       <slot name="bottom"></slot>
     </div>
   </div>
