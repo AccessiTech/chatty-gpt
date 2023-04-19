@@ -80,7 +80,7 @@ class ChatView extends HTMLElement {
 <link href="css/highlightjs/github-dark.min.css" rel="stylesheet">
 
 <div id="chat-container" class="h-full overflow-y-auto">
-  <dl class="mb-32">
+  <dl class="mb-40">
     <div id="chat-gpt-model"class="py-3 border-b border-b-gray-300 bg-gray-50 text-gray-400 text-center text-sm">
       Model: ${chat.model}
     </div>
@@ -94,9 +94,14 @@ class ChatView extends HTMLElement {
     <div class="absolute right-1 bottom-2.5 font-sans text-xs text-gray-400">
       ${submitShortcut}
     </div>
+    <div class="pt-1.5">
+      <button type="submit" class="ml-3 inline-flex justify-center rounded-md bg-teal-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
+        Send
+      </button>
+    </div>
   </form>
 </div>
-`
+`;
 
     this.shadowRoot.querySelector('textarea').focus()
 
