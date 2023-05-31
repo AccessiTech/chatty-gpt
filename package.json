@@ -2,7 +2,9 @@
   "version": "0.0.1",
   "scripts": {
     "watch": "npx tailwindcss -m -i ./css/global.css -o ./css/global.min.css --watch",
-    "serve": "npx http-server"
+    "serve": "npx http-server",
+    "start": "npm run serve",
+    "dev": "npm run watch & npm run start"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
